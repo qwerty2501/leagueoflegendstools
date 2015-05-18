@@ -45,7 +45,7 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
     <TypeScriptTarget>ES6</TypeScriptTarget>
   </PropertyGroup>
@@ -60,18 +60,13 @@
     <TypeScriptCompile Include="LanguagesAPI.Test.ts" />
     <TypeScriptCompile Include="RealmsAPI.Test.ts" />
     <TypeScriptCompile Include="References.ts" />
-    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\qunit\qunit.d.ts" />
     <TypeScriptCompile Include="VersonsAPI.Test.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="dataDragonTest.js" />
-    <None Include="Scripts\jquery-2.1.3.intellisense.js" />
     <Content Include="index.html" />
     <Content Include="promise-proxy.js" />
-    <Content Include="Scripts\jquery-2.1.3.js" />
-    <Content Include="Scripts\jquery-2.1.3.min.js" />
-    <Content Include="Scripts\jquery-2.1.3.min.map" />
     <Content Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
@@ -83,7 +78,12 @@
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\dataDragon\dataDragon.csproj">
+      <Project>{b18d25ff-84f3-43b8-8e99-5178304561e1}</Project>
+      <Name>dataDragon</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

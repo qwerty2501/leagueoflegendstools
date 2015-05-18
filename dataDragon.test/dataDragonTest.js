@@ -1,24 +1,103 @@
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Image LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying SpellVars LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying SummonerSpell LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Gold LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Mastery LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Rune LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Item LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying IndividualChampion LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var dataDragon;
 (function (dataDragon) {
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Champion LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var dataDragon;
 (function (dataDragon) {
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying APIDataType LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var dataDragon;
 (function (dataDragon) {
     (function (APIDataType) {
+        /**
+         * Profile Icon.
+         */
         APIDataType[APIDataType["profileicon"] = 0] = "profileicon";
+        /**
+         * Champion.
+         */
         APIDataType[APIDataType["champion"] = 1] = "champion";
+        /**
+         * Item.
+         */
         APIDataType[APIDataType["item"] = 2] = "item";
+        /**
+         * Rune.
+         */
         APIDataType[APIDataType["rune"] = 3] = "rune";
+        /**
+         * Matery.
+         */
         APIDataType[APIDataType["mastery"] = 4] = "mastery";
+        /**
+         * Summoner spell.
+         */
         APIDataType[APIDataType["summoner"] = 5] = "summoner";
     })(dataDragon.APIDataType || (dataDragon.APIDataType = {}));
     var APIDataType = dataDragon.APIDataType;
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying HashObject LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying HttpRequests LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var dataDragon;
 (function (dataDragon) {
     function getJSONFromHttpRequestAsync(targetURL, reviver) {
+        //return <any> $.getJSON(targetURL);
         return getTextFromHttpRequestAsync(targetURL).then(function (responseText) {
             return JSON.parse(responseText, reviver);
         });
@@ -46,49 +125,168 @@ var dataDragon;
         });
     }
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying APIDataContainer LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying ProfileIconData LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var dataDragon;
 (function (dataDragon) {
     ;
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying LanguageCode LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var dataDragon;
 (function (dataDragon) {
+    /**
+     *	Data Dragon provides data codes in language.
+     */
     (function (LanguageCode) {
+        /**
+        *	Bulgarian (Bulgaria)
+        */
         LanguageCode[LanguageCode["bg_BG"] = 0] = "bg_BG";
+        /**
+        *	Czech (Czech Republic)
+        */
         LanguageCode[LanguageCode["cs_CZ"] = 1] = "cs_CZ";
+        /**
+        *	German (Germany)
+        */
         LanguageCode[LanguageCode["de_DE"] = 2] = "de_DE";
+        /**
+        *	Greek (Greece)
+        */
         LanguageCode[LanguageCode["el_GR"] = 3] = "el_GR";
+        /**
+        *	English (Australia)
+        */
         LanguageCode[LanguageCode["en_AU"] = 4] = "en_AU";
+        /**
+         * English (United Kingdom)
+         */
         LanguageCode[LanguageCode["en_GB"] = 5] = "en_GB";
+        /**
+         * English (Republic of the Philippines)
+         */
         LanguageCode[LanguageCode["en_PH"] = 6] = "en_PH";
+        /**
+         * English (Poland)
+         */
         LanguageCode[LanguageCode["en_PL"] = 7] = "en_PL";
+        /**
+         * English (Singapore)
+         */
         LanguageCode[LanguageCode["en_SG"] = 8] = "en_SG";
+        /**
+         * English (United States)
+         */
         LanguageCode[LanguageCode["en_US"] = 9] = "en_US";
+        /**
+         * Spanish (Argentina)
+         */
         LanguageCode[LanguageCode["es_AR"] = 10] = "es_AR";
+        /**
+         * Spanish (Spain)
+         */
         LanguageCode[LanguageCode["es_ES"] = 11] = "es_ES";
+        /**
+         * Spanish (Mexico)
+         */
         LanguageCode[LanguageCode["es_MX"] = 12] = "es_MX";
+        /**
+         * French (France)
+         */
         LanguageCode[LanguageCode["fr_FR"] = 13] = "fr_FR";
+        /**
+         * Hungarian (Hungary)
+         */
         LanguageCode[LanguageCode["hu_HU"] = 14] = "hu_HU";
+        /**
+         * Indonesian (Indonesia)
+         */
         LanguageCode[LanguageCode["id_ID"] = 15] = "id_ID";
+        /**
+         * Italian (Italy)
+         */
         LanguageCode[LanguageCode["it_IT"] = 16] = "it_IT";
+        /**
+         * Japanese (Japan)
+         */
         LanguageCode[LanguageCode["ja_JP"] = 17] = "ja_JP";
+        /**
+         * Korean (Korea)
+         */
         LanguageCode[LanguageCode["ko_KR"] = 18] = "ko_KR";
+        /**
+         * Dutch (Netherlands)
+         */
         LanguageCode[LanguageCode["nl_NL"] = 19] = "nl_NL";
+        /**
+         *  Malay (Malaysia)
+         */
         LanguageCode[LanguageCode["ms_MY"] = 20] = "ms_MY";
+        /**
+         * Polish (Poland)
+         */
         LanguageCode[LanguageCode["pl_PL"] = 21] = "pl_PL";
+        /**
+         * Portuguese (Brazil)
+         */
         LanguageCode[LanguageCode["pt_PT"] = 22] = "pt_PT";
+        /**
+         * Romanian (Romania)
+         */
         LanguageCode[LanguageCode["ro_RO"] = 23] = "ro_RO";
+        /**
+         * Russian (Russia)
+         */
         LanguageCode[LanguageCode["ru_RU"] = 24] = "ru_RU";
+        /**
+         * Thai (Thailand)
+         */
         LanguageCode[LanguageCode["th_TH"] = 25] = "th_TH";
+        /**
+         * Turkish (Turkey)
+         */
         LanguageCode[LanguageCode["tr_TR"] = 26] = "tr_TR";
+        /**
+         * Vietnamese (Viet Nam)
+         */
         LanguageCode[LanguageCode["vn_VN"] = 27] = "vn_VN";
+        /**
+         * Chinese (China)
+         */
         LanguageCode[LanguageCode["zh_CN"] = 28] = "zh_CN";
+        /**
+         * Chinese (Malaysia)
+         */
         LanguageCode[LanguageCode["zh_MY"] = 29] = "zh_MY";
+        /**
+         * Chinese (Taiwan)
+         */
         LanguageCode[LanguageCode["zh_TW"] = 30] = "zh_TW";
     })(dataDragon.LanguageCode || (dataDragon.LanguageCode = {}));
     var LanguageCode = dataDragon.LanguageCode;
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying ScoreBoardIcon LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var dataDragon;
 (function (dataDragon) {
+    /**
+     * This enum is used scoreboard icon API.
+     */
     (function (ScoreBoardIcon) {
         ScoreBoardIcon[ScoreBoardIcon["champion"] = 0] = "champion";
         ScoreBoardIcon[ScoreBoardIcon["gold"] = 1] = "gold";
@@ -99,18 +297,46 @@ var dataDragon;
     })(dataDragon.ScoreBoardIcon || (dataDragon.ScoreBoardIcon = {}));
     var ScoreBoardIcon = dataDragon.ScoreBoardIcon;
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying MapId LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var dataDragon;
 (function (dataDragon) {
+    /**
+     * A map image filename is related the to ID of the map
+     */
     (function (MapId) {
+        /**
+         * Original Summoner's Rift
+         */
         MapId[MapId["map1"] = 1] = "map1";
+        /**
+         * Current Twisted Treeline
+         */
         MapId[MapId["map10"] = 10] = "map10";
+        /**
+         * Current Summoner's Rift
+         */
         MapId[MapId["map11"] = 11] = "map11";
+        /**
+         * Howling Abyss
+         */
         MapId[MapId["map12"] = 12] = "map12";
     })(dataDragon.MapId || (dataDragon.MapId = {}));
     var MapId = dataDragon.MapId;
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Region LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var dataDragon;
 (function (dataDragon) {
+    /**
+        Region corresponding to data to retrieve.
+    */
     (function (Region) {
         Region[Region["br"] = 0] = "br";
         Region[Region["eune"] = 1] = "eune";
@@ -125,13 +351,38 @@ var dataDragon;
     })(dataDragon.Region || (dataDragon.Region = {}));
     var Region = dataDragon.Region;
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Constants LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+/// <reference path="region.ts" />
 var dataDragon;
 (function (dataDragon) {
+    /**
+        a DataDragon site's domain.
+    */
     dataDragon.dataDragonDomain = 'ddragon.leagueoflegends.com';
+    /**
+        default region.
+    */
     dataDragon.defaultRegion = 6 /* na */;
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Realm LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying realm LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var dataDragon;
 (function (dataDragon) {
+    /**
+     *	Get the realm data from DataDragon API.
+     *	This function is Asynchronous.
+     */
     function getRealmAsync(region) {
         if (region === void 0) { region = dataDragon.defaultRegion; }
         const targetURL = 'https://' + dataDragon.dataDragonDomain + '/realms/' + dataDragon.Region[region] + '.json';
@@ -139,21 +390,43 @@ var dataDragon;
     }
     dataDragon.getRealmAsync = getRealmAsync;
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Versions LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var dataDragon;
 (function (dataDragon) {
+    /**
+     *	Get Versions data.
+     *	This function is Asynchronous.
+     */
     function getVersionsAsync() {
         const targetURL = 'https://' + dataDragon.dataDragonDomain + '/api/versions.json';
         return dataDragon.getJSONFromHttpRequestAsync(targetURL);
     }
     dataDragon.getVersionsAsync = getVersionsAsync;
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Languages LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var dataDragon;
 (function (dataDragon) {
+    /**
+     * Get the Languages data.
+     * This function is Asynchronous.
+     */
     function getLanguagesAsync() {
         const url = 'https://' + dataDragon.dataDragonDomain + '/cdn/languages.json';
         return dataDragon.getJSONFromHttpRequestAsync(url);
     }
     dataDragon.getLanguagesAsync = getLanguagesAsync;
+    /**
+     * Get the Language Codes.
+     * This function is Asynchronous.
+     */
     function getLanguageCodesAsync() {
         return getLanguagesAsync().then(function (languages) {
             var codes = new Array(languages.length);
@@ -165,28 +438,51 @@ var dataDragon;
     }
     dataDragon.getLanguageCodesAsync = getLanguageCodesAsync;
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Images LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var dataDragon;
 (function (dataDragon) {
+    /**
+     * Create a profile icon URL.
+     */
     function createProfileIconImageURL(version, id) {
         return 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/img/profileicon/' + id + '.png';
     }
     dataDragon.createProfileIconImageURL = createProfileIconImageURL;
+    /**
+     * Create champion's splash  URL.
+     */
     function createChampionSplashImageURL(championName, skinNumber) {
         return 'http://' + dataDragon.dataDragonDomain + '/cdn/img/champion/splash/' + championName + '_' + skinNumber + '.jpg';
     }
     dataDragon.createChampionSplashImageURL = createChampionSplashImageURL;
+    /**
+     * Create champion's screen art URL.
+     */
     function createChampionLoadingScreenArtImageURL(championName, skinNumber) {
         return 'http://' + dataDragon.dataDragonDomain + '/cdn/img/champion/loading/' + championName + '_' + skinNumber + '.jpg';
     }
     dataDragon.createChampionLoadingScreenArtImageURL = createChampionLoadingScreenArtImageURL;
+    /**
+     * Create champion's square image URL.
+     */
     function createChampionSquareImageURL(version, championName) {
         return 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/img/champion/' + championName + '.png';
     }
     dataDragon.createChampionSquareImageURL = createChampionSquareImageURL;
+    /**
+     * Create passive ability's image URL.
+     */
     function createChampionPassiveAbilityImageURL(version, fullImageName) {
         return 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/img/passive/' + fullImageName;
     }
     dataDragon.createChampionPassiveAbilityImageURL = createChampionPassiveAbilityImageURL;
+    /**
+     * Create ability's image URL.
+     */
     function createChampionAbilityImageURL(version, fullImageName) {
         return createSpellImageURL(version, fullImageName);
     }
@@ -194,67 +490,121 @@ var dataDragon;
     function createSpellImageURL(version, fullImageName) {
         return 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/img/spell/' + fullImageName;
     }
+    /**
+     * Create summoner spell's image URL.
+     */
     function createSummonerSpellImageURL(version, spellName) {
         return createSpellImageURL(version, 'Summoner' + spellName + '.png');
     }
     dataDragon.createSummonerSpellImageURL = createSummonerSpellImageURL;
+    /**
+     * Create item's image URL.
+     */
     function createItemImageURL(version, id) {
         return 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/img/item/' + id + '.png';
     }
     dataDragon.createItemImageURL = createItemImageURL;
+    /**
+     * Create Mastery's image URL.
+     */
     function createMasteryImageURL(version, id) {
         return 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/img/mastery/' + id + '.png';
     }
     dataDragon.createMasteryImageURL = createMasteryImageURL;
+    /**
+     * Create Rune's image URL.
+     */
     function createRuneImageURL(version, fullImageName) {
         return 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/img/rune/' + fullImageName;
     }
     dataDragon.createRuneImageURL = createRuneImageURL;
+    /**
+     * Create Splite's Image URL.
+     */
     function createSpriteImageURL(version, spriteImageName) {
         return 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/img/sprite/' + spriteImageName;
     }
     dataDragon.createSpriteImageURL = createSpriteImageURL;
+    /**
+     * Create Minimap's Image URL.
+     */
     function createMinimapImageURL(version, id) {
         return 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/img/map/map' + id + '.png';
     }
     dataDragon.createMinimapImageURL = createMinimapImageURL;
+    /**
+     * Create scoreboard icon's Image URL.
+     */
     function createScoreBoardIconImageURL(version, icon) {
         return 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/img/ui/' + dataDragon.ScoreBoardIcon[icon] + '.png';
     }
     dataDragon.createScoreBoardIconImageURL = createScoreBoardIconImageURL;
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying DatasAPI LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var dataDragon;
 (function (dataDragon) {
+    /**
+     * Get profile icon data.
+     * This function is Asynchronous.
+     */
     function getProfileIconDataAsync(version, language) {
         const targetURL = 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/data/' + dataDragon.LanguageCode[language] + '/profileicon.json';
         return getAPIDataAsync(targetURL);
     }
     dataDragon.getProfileIconDataAsync = getProfileIconDataAsync;
+    /**
+     * Get Champion data.
+     * This function is Asynchronous.
+     */
     function getChampionDataAsync(version, language) {
         const targetURL = 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/data/' + dataDragon.LanguageCode[language] + '/champion.json';
         return getAPIDataAsync(targetURL);
     }
     dataDragon.getChampionDataAsync = getChampionDataAsync;
+    /**
+     * Get Individual champion data.
+     * This function is Asynchronous.
+     */
     function getIndividualChampionDataAsync(version, id, language) {
         const targetURL = 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/data/' + dataDragon.LanguageCode[language] + '/champion/' + id + '.json';
         return getAPIDataAsync(targetURL);
     }
     dataDragon.getIndividualChampionDataAsync = getIndividualChampionDataAsync;
+    /**
+     * Get Item data.
+     * This function is Asynchronous.
+     */
     function getItemDataAsync(version, language) {
         const targetURL = 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/data/' + dataDragon.LanguageCode[language] + '/item.json';
         return getAPIDataAsync(targetURL);
     }
     dataDragon.getItemDataAsync = getItemDataAsync;
+    /**
+     * Get Rune data.
+     * This function is Asynchronous.
+     */
     function getRuneDataAsync(version, language) {
         const targetURL = 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/data/' + dataDragon.LanguageCode[language] + '/rune.json';
         return getAPIDataAsync(targetURL);
     }
     dataDragon.getRuneDataAsync = getRuneDataAsync;
+    /**
+     * Get Matery data.
+     * This function is Asynchronous.
+     */
     function getMasteryDataAsync(version, language) {
         const targetURL = 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/data/' + dataDragon.LanguageCode[language] + '/mastery.json';
         return getAPIDataAsync(targetURL);
     }
     dataDragon.getMasteryDataAsync = getMasteryDataAsync;
+    /**
+     * Get Summoner spell data.
+     * This function is Asynchronous.
+     */
     function getSummonerSpellDataAsync(version, language) {
         const targetURL = 'http://' + dataDragon.dataDragonDomain + '/cdn/' + version + '/data/' + dataDragon.LanguageCode[language] + '/summoner.json';
         return getAPIDataAsync(targetURL);
@@ -267,6 +617,47 @@ var dataDragon;
         });
     }
 })(dataDragon || (dataDragon = {}));
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying References LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+/// <reference path="Image.ts"/>
+/// <reference path="spellvars.ts"/>
+/// <reference path="summonerspell.ts"/>
+/// <reference path="basicdata.ts"/>
+/// <reference path="mastery.ts"/>
+/// <reference path="rune.ts"/>
+/// <reference path="item.ts"/>
+/// <reference path="individualchampion.ts"/>
+/// <reference path="champion.ts"/>
+/// <reference path="apidatatype.ts"/>
+/// <reference path="hashobject.ts"/>
+/// <reference path="httpRequests.ts"/>
+/// <reference path="apidatacontainer.ts"/>
+/// <reference path="profileicon.ts"/>
+/// <reference path="languagecode.ts" />
+/// <reference path="scoreboardicon.ts" />
+/// <reference path="mapid.ts" />
+/// <reference path="region.ts" />
+/// <reference path="constants.ts" />
+///<reference  path="Realm.ts"/>
+///<reference path="RealmsAPI.ts"/>
+/// <reference path="VersionsAPI.ts" />
+/// <reference path="languagesAPI.ts" />
+/// <reference path="imagesAPI.ts" />
+/// <reference path="datasAPI.ts"/> 
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying References LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+/// <chutzpah_reference path="../es6/promise-proxy.js"/>
+/// <reference path="../datadragon/references.ts" />
+/// <reference path="scripts/typings/qunit/qunit.d.ts" />
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying DatasAPI LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 asyncTest('getProfileIconDataAsync test', function () {
     dataDragon.getProfileIconDataAsync(CURRENT_LOL_VERSION, 9 /* en_US */).then(function (value) {
         start();
@@ -729,10 +1120,20 @@ function statsTest(stats) {
     notUndefined(stats.rPercentTimeDeadMod);
     notUndefined(stats.rPercentTimeDeadModPerLevel);
 }
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying General LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+///<reference path="references.ts"/>
 var CURRENT_LOL_VERSION = '5.9.1';
 function notUndefined(value, message) {
     notStrictEqual(value, undefined, message);
 }
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Images LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+/// <reference path="references.ts" />
 test('createProfileIconImageURL test', function () {
     equal(dataDragon.createProfileIconImageURL('5.2.1', 588), 'http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/588.png');
 });
@@ -772,12 +1173,22 @@ test('createMinimapImageURL test', function () {
 test('createScoreBoardIconImageURL test', function () {
     equal(dataDragon.createScoreBoardIconImageURL('5.2.1', 0 /* champion */), 'http://ddragon.leagueoflegends.com/cdn/5.2.1/img/ui/champion.png');
 });
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Languages LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+/// <reference path="references.ts" />
 asyncTest('getLanguageCodesAsync test', function () {
     dataDragon.getLanguageCodesAsync().then(function (languages) {
         start();
         notEqual(languages.length, 0);
     });
 });
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Realm LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+/// <reference path="references.ts" />
 asyncTest('getRealmAsync test', function () {
     dataDragon.getRealmAsync(dataDragon.defaultRegion).then(function (data) {
         start();
@@ -796,6 +1207,11 @@ asyncTest('getRealmAsync test', function () {
         ok(isNaN(data.v));
     });
 });
+//          Copyright qwerty2501 2015 - .
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying Versons LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+/// <reference path="references.ts" />
 asyncTest('getVersionsAsync test', function () {
     dataDragon.getVersionsAsync().then(function (versions) {
         start();

@@ -76,13 +76,9 @@
     <TypeScriptCompile Include="Region.ts" />
     <TypeScriptCompile Include="Rune.ts" />
     <TypeScriptCompile Include="ScoreBoardIcon.ts" />
-    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="SpellVars.ts" />
     <TypeScriptCompile Include="SummonerSpell.ts" />
     <TypeScriptCompile Include="VersionsAPI.ts" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="web.config" />
