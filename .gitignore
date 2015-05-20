@@ -192,4 +192,4 @@ ModelManifest.xml
 
 # User's ignore
 *.map
-*/Scripts/redirects/*.js
+*/Scripts/out/*.js

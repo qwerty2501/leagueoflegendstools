@@ -1,0 +1,14 @@
+﻿{
+  "Compile": {
+    "Extensions": [".ts"],
+    "ExtensionsWithNoOutput": [".d.ts"],
+    "Executable": "%powershellexe%",
+    "Arguments": "-NoProfile %chutzpahsettingsdir%\\compile.ps1"
+  },
+  "References": [
+    {"Include": "**.ts", "Exclude": "**.d.ts" }
+  ],
+  "Tests": [
+    { "Include": "**.ts", "Exclude": "**.d.ts" }
+  ]
+}
