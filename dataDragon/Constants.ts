@@ -4,7 +4,7 @@
 //          http://www.boost.org/LICENSE_1_0.txt)
 
 
-/// <reference path="region.ts" />
+/// <reference path="References.ts"/>
 
 module dataDragon
 {

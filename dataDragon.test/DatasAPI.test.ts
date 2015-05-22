@@ -8,7 +8,8 @@
 asyncTest('getProfileIconDataAsync test', () =>  {
 
     dataDragon.getProfileIconDataAsync(CURRENT_LOL_VERSION, dataDragon.LanguageCode.en_US).then((value) => {
-		start();
+        start();
+        
 		notStrictEqual(value, undefined);
 		notStrictEqual(value.data, undefined);
         notStrictEqual(value.data, undefined);
