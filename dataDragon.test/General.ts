@@ -9,5 +9,5 @@ var CURRENT_LOL_VERSION = '5.9.1';
 
 function notUndefined(value: any,message?:string)
 {
-    notStrictEqual(value, undefined, message);
+    notEqual(typeof value , typeof undefined);
 }

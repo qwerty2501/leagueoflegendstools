@@ -16,7 +16,7 @@ module dataDragon
         /**
          *
          */
-        tree: MateryTree[];
+        tree: MasteryTree;
     }
 
 
@@ -59,7 +59,7 @@ module dataDragon
     /**
      * Mastery tree data.
      */
-    export interface MateryTree
+    export interface MasteryTreeItem
     {
 
         /**
@@ -72,4 +72,28 @@ module dataDragon
          */
         prereq: string;
     }
+
+    /**
+     * Mastery tree data.
+     */
+    export interface MasteryTree
+    {
+        /**
+         *
+         */
+        Defense: MasteryTreeItem[][];
+
+        /**
+         *
+         */
+        Offense: MasteryTreeItem[][];
+
+        /**
+         *
+         */
+        Utility: MasteryTreeItem[][];
+    }
+
+
+    
 }

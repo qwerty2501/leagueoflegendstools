@@ -9,16 +9,14 @@ asyncTest('getVersionsAsync test',() => {
 
 	dataDragon.getVersionsAsync().then((versions)=>{
 
-		start();
+		
 		notEqual( versions.length,0);
 
 		versions.forEach((version, index, array) => {
-
-			ok(isNaN(<any>version));
-
+            notUndefined(version);
 		});
 		
-
+        start();
 	});
 
 });

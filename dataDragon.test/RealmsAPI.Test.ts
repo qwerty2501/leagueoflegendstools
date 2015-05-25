@@ -9,21 +9,23 @@
 asyncTest('getRealmAsync test',() => {
 
 	dataDragon.getRealmAsync(dataDragon.defaultRegion).then((data) => {
-		start();
-		notStrictEqual(data.cdn, undefined);
-		notStrictEqual(data.css, undefined);
-		ok(isNaN(<any>data.css));
-		notStrictEqual(data.dd, undefined);
-		ok(isNaN(<any>data.dd));
-		notStrictEqual(data.l, undefined);
-		notStrictEqual(data.lg, undefined);
-		ok(isNaN(<any>data.lg));
-		notStrictEqual(data.n, undefined);
-		notStrictEqual(data.profileiconmax, undefined);
-		notStrictEqual(data.store, undefined);
-		notStrictEqual(data.v, undefined);
-		ok(isNaN(<any>data.v));
 		
+        
+        notUndefined(data.cdn);
+        notUndefined(data.css);
+		
+        notUndefined(data.dd);
+		
+        notUndefined(data.l);
+        notUndefined(data.lg);
+		
+        notUndefined(data.n);
+        notUndefined(data.profileiconmax);
+        notUndefined(data.store);
+        notUndefined(data.v);
+		
+		
+        start();
 	});
 
 	

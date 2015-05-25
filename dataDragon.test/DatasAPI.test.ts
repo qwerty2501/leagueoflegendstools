@@ -8,7 +8,7 @@
 asyncTest('getProfileIconDataAsync test', () =>  {
 
     dataDragon.getProfileIconDataAsync(CURRENT_LOL_VERSION, dataDragon.LanguageCode.en_US).then((value) => {
-        start();
+        
         
 		notStrictEqual(value, undefined);
 		notStrictEqual(value.data, undefined);
@@ -31,7 +31,7 @@ asyncTest('getProfileIconDataAsync test', () =>  {
 			notStrictEqual(val.image.y, undefined);
 		}
 		
-
+        start();
 	});
 
 });
@@ -41,7 +41,7 @@ asyncTest('getChampionDataAsync test',() =>
     dataDragon.getChampionDataAsync(CURRENT_LOL_VERSION, dataDragon.LanguageCode.en_US)
         .then((value) =>
     {
-        start();
+        
 
         notStrictEqual(value, undefined);
         notStrictEqual(value.data, undefined);
@@ -99,6 +99,8 @@ asyncTest('getChampionDataAsync test',() =>
             notStrictEqual(val.stats.spellblock, undefined);
             notStrictEqual(val.stats.spellblockperlevel, undefined);
         }
+
+        start();
     });
 });
 
@@ -107,131 +109,131 @@ asyncTest('getIndividualChampionDataAsync test',() =>
     dataDragon.getIndividualChampionDataAsync(CURRENT_LOL_VERSION, 'Aatrox', dataDragon.LanguageCode.en_US)
         .then((value) =>
     {
-        start();
+        
 
-        notStrictEqual(value, undefined);
-        notStrictEqual(value.data, undefined);
-        notStrictEqual(value.format, undefined);
-        notStrictEqual(value.version, undefined);
+        notUndefined(value);
+        notUndefined(value.data);
+        notUndefined(value.format);
+        notUndefined(value.version);
         equal(value.type, dataDragon.APIDataType.champion);
 
         for (var prop in value.data)
         {
             var val = value.data[prop];
-            notStrictEqual(val.blurb, undefined);
-            notStrictEqual(val.id, undefined);
-            notStrictEqual(val.image, undefined);
-            notStrictEqual(val.info, undefined);
-            notStrictEqual(val.key, undefined);
-            notStrictEqual(val.name, undefined);
-            notStrictEqual(val.partype, undefined);
-            notStrictEqual(val.stats, undefined);
-            notStrictEqual(val.tags, undefined);
-            notStrictEqual(val.title, undefined);
+            notUndefined(val.blurb);
+            notUndefined(val.id);
+            notUndefined(val.image);
+            notUndefined(val.info);
+            notUndefined(val.key);
+            notUndefined(val.name);
+            notUndefined(val.partype);
+            notUndefined(val.stats);
+            notUndefined(val.tags);
+            notUndefined(val.title);
 
-            notStrictEqual(val.image.full, undefined);
-            notStrictEqual(val.image.group, undefined);
-            notStrictEqual(val.image.h, undefined);
-            notStrictEqual(val.image.sprite, undefined);
-            notStrictEqual(val.image.w, undefined);
-            notStrictEqual(val.image.x, undefined);
-            notStrictEqual(val.image.y, undefined);
+            notUndefined(val.image.full);
+            notUndefined(val.image.group);
+            notUndefined(val.image.h);
+            notUndefined(val.image.sprite);
+            notUndefined(val.image.w);
+            notUndefined(val.image.x);
+            notUndefined(val.image.y);
 
-            notStrictEqual(val.info.attack, undefined);
-            notStrictEqual(val.info.defense, undefined);
-            notStrictEqual(val.info.difficulty, undefined);
-            notStrictEqual(val.info.magic, undefined);
+            notUndefined(val.info.attack);
+            notUndefined(val.info.defense);
+            notUndefined(val.info.difficulty);
+            notUndefined(val.info.magic);
 
-            notStrictEqual(val.stats.armor, undefined);
-            notStrictEqual(val.stats.armorperlevel, undefined);
-            notStrictEqual(val.stats.attackdamage, undefined);
-            notStrictEqual(val.stats.attackdamageperlevel, undefined);
-            notStrictEqual(val.stats.attackrange, undefined);
-            notStrictEqual(val.stats.attackspeedoffset, undefined);
-            notStrictEqual(val.stats.attackspeedperlevel, undefined);
-            notStrictEqual(val.stats.crit, undefined);
-            notStrictEqual(val.stats.critperlevel, undefined);
-            notStrictEqual(val.stats.hp, undefined);
-            notStrictEqual(val.stats.hpperlevel, undefined);
-            notStrictEqual(val.stats.hpperlevel, undefined);
-            notStrictEqual(val.stats.hpregen, undefined);
-            notStrictEqual(val.stats.hpregenperlevel, undefined);
-            notStrictEqual(val.stats.movespeed, undefined);
-            notStrictEqual(val.stats.mp, undefined);
-            notStrictEqual(val.stats.mpperlevel, undefined);
-            notStrictEqual(val.stats.mpregen, undefined);
-            notStrictEqual(val.stats.mpregenperlevel, undefined);
-            notStrictEqual(val.stats.spellblock, undefined);
-            notStrictEqual(val.stats.spellblockperlevel, undefined);
+            notUndefined(val.stats.armor);
+            notUndefined(val.stats.armorperlevel);
+            notUndefined(val.stats.attackdamage);
+            notUndefined(val.stats.attackdamageperlevel);
+            notUndefined(val.stats.attackrange);
+            notUndefined(val.stats.attackspeedoffset);
+            notUndefined(val.stats.attackspeedperlevel);
+            notUndefined(val.stats.crit);
+            notUndefined(val.stats.critperlevel);
+            notUndefined(val.stats.hp);
+            notUndefined(val.stats.hpperlevel);
+            notUndefined(val.stats.hpperlevel);
+            notUndefined(val.stats.hpregen);
+            notUndefined(val.stats.hpregenperlevel);
+            notUndefined(val.stats.movespeed);
+            notUndefined(val.stats.mp);
+            notUndefined(val.stats.mpperlevel);
+            notUndefined(val.stats.mpregen);
+            notUndefined(val.stats.mpregenperlevel);
+            notUndefined(val.stats.spellblock);
+            notUndefined(val.stats.spellblockperlevel);
 
 
-            notStrictEqual(val.allytips, undefined);
+            notUndefined(val.allytips);
 
-            notStrictEqual(val.enemytips, undefined);
+            notUndefined(val.enemytips);
 
-            notStrictEqual(val.lore, undefined);
+            notUndefined(val.lore);
 
-            notStrictEqual(val.passive, undefined);
+            notUndefined(val.passive);
 
-            notStrictEqual(val.passive.description, undefined);
-            notStrictEqual(val.passive.image, undefined);
-            notStrictEqual(val.passive.name, undefined);
+            notUndefined(val.passive.description);
+            notUndefined(val.passive.image);
+            notUndefined(val.passive.name);
             
-            notStrictEqual(val.recommended, undefined);
+            notUndefined(val.recommended);
             
             val.recommended.forEach((recommendedValue) =>
             {
-                notStrictEqual(recommendedValue.blocks, undefined);
+                notUndefined(recommendedValue.blocks);
                 recommendedValue.blocks.forEach((block) =>
                 {
                     
-                    notStrictEqual(block.items, undefined);
+                    notUndefined(block.items);
 
                     block.items.forEach((blockItem) =>
                     {
                         
-                        notStrictEqual(blockItem.id, undefined);
-                        notStrictEqual(blockItem.count, undefined);
+                        notUndefined(blockItem.id);
+                        notUndefined(blockItem.count);
                         
                     });
 
                     
                     
-                    notStrictEqual(block.type, undefined);
+                    notUndefined(block.type);
                     
                 });
                 
-                notStrictEqual(recommendedValue.champion, undefined);
-                notStrictEqual(recommendedValue.map, undefined);
-                notStrictEqual(recommendedValue.mode, undefined);
-                notStrictEqual(recommendedValue.priority, undefined);
-                notStrictEqual(recommendedValue.title, undefined);
-                notStrictEqual(recommendedValue.type, undefined);
+                notUndefined(recommendedValue.champion);
+                notUndefined(recommendedValue.map);
+                notUndefined(recommendedValue.mode);
+                notUndefined(recommendedValue.priority);
+                notUndefined(recommendedValue.title);
+                notUndefined(recommendedValue.type);
                 
             });
             
-            notStrictEqual(val.skins, undefined);
+            notUndefined(val.skins);
 
             val.skins.forEach((skin) =>
             {
-                notStrictEqual(skin.id, undefined);
-                notStrictEqual(skin.name, undefined);
-                notStrictEqual(skin.num, undefined);
+                notUndefined(skin.id);
+                notUndefined(skin.name);
+                notUndefined(skin.num);
             });
 
             
-            notStrictEqual(val.spells, undefined);
+            notUndefined(val.spells);
 
             val.spells.forEach((spell) =>
             {
-                notStrictEqual(spell.cooldown, undefined);
+                notUndefined(spell.cooldown);
                 notStrictEqual(spell.cooldown.length, 0);
-                notStrictEqual(spell.cooldownBurn, undefined);
-                notStrictEqual(spell.cost, undefined);
-                notStrictEqual(spell.costBurn, undefined);
-                notStrictEqual(spell.costType, undefined);
-                notStrictEqual(spell.description, undefined);
-                notStrictEqual(spell.effect, undefined);
+                notUndefined(spell.cooldownBurn);
+                notUndefined(spell.cost);
+                notUndefined(spell.costBurn);
+                notUndefined(spell.costType);
+                notUndefined(spell.description);
+                notUndefined(spell.effect);
                 
                 spell.effect.forEach((effect) =>
                 {
@@ -239,13 +241,13 @@ asyncTest('getIndividualChampionDataAsync test',() =>
 
                     if (effect != null)
                     {
-                        notStrictEqual(effect, undefined);
+                        notUndefined(effect);
 
-                        notStrictEqual(effect.length, undefined);
+                        notUndefined(effect.length);
 
                         effect.forEach((effectValue) =>
                         {
-                            notStrictEqual(effectValue, undefined);
+                            notUndefined(effectValue);
                         });
 
                     }
@@ -254,18 +256,18 @@ asyncTest('getIndividualChampionDataAsync test',() =>
                     
                 });
 
-                notStrictEqual(spell.effectBurn, undefined);
-                notStrictEqual(spell.image, undefined);
-                notStrictEqual(spell.id, undefined);
-                notStrictEqual(spell.leveltip, undefined);
-                notStrictEqual(spell.leveltip.effect, undefined);
+                notUndefined(spell.effectBurn);
+                notUndefined(spell.image);
+                notUndefined(spell.id);
+                notUndefined(spell.leveltip);
+                notUndefined(spell.leveltip.effect);
                 notStrictEqual(spell.leveltip.effect.length, 0);
-                notStrictEqual(spell.leveltip.label, undefined);
+                notUndefined(spell.leveltip.label);
                 notStrictEqual(spell.leveltip.label.length, 0);
-                notStrictEqual(spell.maxrank, undefined);
-                notStrictEqual(spell.name, undefined);
-                notStrictEqual(spell.range, undefined);
-                notStrictEqual(spell.range.length, undefined);
+                notUndefined(spell.maxrank);
+                notUndefined(spell.name);
+                notUndefined(spell.range);
+                notUndefined(spell.range.length);
 
 
 
@@ -273,18 +275,18 @@ asyncTest('getIndividualChampionDataAsync test',() =>
                 {
                     (<number[]>spell.range).forEach((value) =>
                     {
-                        notStrictEqual(value, undefined);
+                        notUndefined(value);
                     });
                 }
 
-                notStrictEqual(spell.rangeBurn, undefined);
-                notStrictEqual(spell.tooltip, undefined);
-                notStrictEqual(spell.vars, undefined);
+                notUndefined(spell.rangeBurn);
+                notUndefined(spell.tooltip);
+                notUndefined(spell.vars);
             });
 
            
         }
-
+        start();
     });
 });
 
@@ -293,7 +295,7 @@ asyncTest('getItemDataAsync test',() =>
     dataDragon.getItemDataAsync(CURRENT_LOL_VERSION, dataDragon.LanguageCode.en_US)
         .then((value) =>
     {
-        start();
+        
 
         notUndefined(value);
         notUndefined(value.basic);
@@ -391,7 +393,7 @@ asyncTest('getItemDataAsync test',() =>
 
         }
 
-
+        start();
         
 
     });
@@ -403,7 +405,7 @@ asyncTest('getRuneDataAsync test',() =>
     dataDragon.getRuneDataAsync(CURRENT_LOL_VERSION, dataDragon.LanguageCode.en_US)
         .then((value) =>
     {
-        start();
+        
 
         notUndefined(value);
         notUndefined(value.basic);
@@ -465,10 +467,11 @@ asyncTest('getRuneDataAsync test',() =>
 
 
         }
-
+        start();
     });
 
 });
+
 
 asyncTest('getMasteryDataAsync test',() =>
 {
@@ -476,23 +479,68 @@ asyncTest('getMasteryDataAsync test',() =>
     dataDragon.getMasteryDataAsync(CURRENT_LOL_VERSION, dataDragon.LanguageCode.en_US)
         .then((value) =>
     {
-        start();
-
+        
+        
         notUndefined(value.data);
         notUndefined(value.tree);
         notUndefined(value.type);
         notUndefined(value.version);
-
-        var tree = value.tree;
+        
 
         
-        tree.forEach((treeValue) =>
+        
+        var tree = value.tree;
+        
+        tree.Defense.forEach((treeValueArray) =>
         {
-            notUndefined(treeValue.masteryId);
-            notUndefined(treeValue.prereq);
+            
+            treeValueArray.forEach((treeValue) =>
+            {
+                if(treeValue != null)
+                {
+                    
+                    notUndefined(treeValue.masteryId);
+                    notUndefined(treeValue.prereq);
+                    
+
+                }
+            });
+                
+            
+            
+        });
+
+        
+        tree.Offense.forEach((treeValueArray) =>
+        {
+            
+            treeValueArray.forEach((treeValue) =>
+            {
+                if(treeValue != null)
+                {
+                    notUndefined(treeValue.masteryId);
+                    notUndefined(treeValue.prereq);
+                }
+            });
+                
+            
+        });
+
+        tree.Utility.forEach((treeValueArray) =>
+        {
+            
+            treeValueArray.forEach((treeValue) =>
+            {
+                if(treeValue != null)
+                {
+                    notUndefined(treeValue.masteryId);
+                    notUndefined(treeValue.prereq);
+                }
+            });
+                
+            
         });
         
-  
 
         
         for(var dataProp in value.data)
@@ -506,6 +554,8 @@ asyncTest('getMasteryDataAsync test',() =>
             notUndefined(data.prereq);
             notUndefined(data.ranks);
         }
+        
+        start();
     });
 
 });
@@ -516,7 +566,7 @@ asyncTest('getSummonerSpellDataAsync test',() =>
     dataDragon.getSummonerSpellDataAsync(CURRENT_LOL_VERSION, dataDragon.LanguageCode.en_US)
         .then((value) =>
     {
-        start();
+        
 
         notUndefined(value.data);
         notUndefined(value.type);
@@ -546,6 +596,8 @@ asyncTest('getSummonerSpellDataAsync test',() =>
             notUndefined(data.tooltip);
             notUndefined(data.vars);
         }
+
+        start();
     });
 });
 

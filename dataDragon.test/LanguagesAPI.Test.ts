@@ -9,8 +9,9 @@
 asyncTest('getLanguageCodesAsync test',() => {
 
 	dataDragon.getLanguageCodesAsync().then((languages) => {
-		start();
-		notEqual(languages.length,0);
+		
+        notEqual(languages.length, 0);
+        start();
 	});
 
 });
