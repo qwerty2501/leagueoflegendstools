@@ -193,3 +193,4 @@ ModelManifest.xml
 # User's ignore
 *.map
 */Scripts/out/*.js
+*/Scripts/test/*.js

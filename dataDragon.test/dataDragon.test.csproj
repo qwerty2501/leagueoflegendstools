@@ -90,7 +90,7 @@
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <TypeScriptOutFile>Scripts/out/dataDragonTest.js</TypeScriptOutFile>
+    <TypeScriptOutFile>Scripts/test/dataDragonTest.js</TypeScriptOutFile>
     <TypeScriptOutDir>
     </TypeScriptOutDir>
     <TypeScriptModuleKind>none</TypeScriptModuleKind>
