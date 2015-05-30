@@ -62,12 +62,13 @@
     <TypeScriptCompile Include="References.ts" />
     <TypeScriptCompile Include="Scripts\typings\es6-promise\es6-promise.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\qunit\qunit.d.ts" />
-    <TypeScriptCompile Include="VersonsAPI.Test.ts" />
+    <TypeScriptCompile Include="VersionsAPI.Test.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="promise-proxy.js" />
-    <Content Include="Scripts\out\dataDragonTest.js" />
+    <Content Include="qunit-1.18.0.js" />
+    <Content Include="Scripts\test\dataDragonTest.js" />
     <Content Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>

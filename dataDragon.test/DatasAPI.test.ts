@@ -5,6 +5,7 @@
 
 ///<reference path="references.ts"/>
 
+/*
 asyncTest('getProfileIconDataAsync test', () =>  {
 
     dataDragon.getProfileIconDataAsync(CURRENT_LOL_VERSION, dataDragon.LanguageCode.en_US).then((value) => {
@@ -35,6 +36,7 @@ asyncTest('getProfileIconDataAsync test', () =>  {
 	});
 
 });
+
 
 asyncTest('getChampionDataAsync test',() =>
 {
@@ -725,3 +727,4 @@ function statsTest(stats: dataDragon.BasicDataStats)
     notUndefined(stats.rPercentTimeDeadModPerLevel);
 
 }
+*/

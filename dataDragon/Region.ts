@@ -24,4 +24,8 @@ module dataDragon
 		tr,
     }
 
+    /**
+		default region.
+	*/
+    export const defaultRegion = Region.na;
 }

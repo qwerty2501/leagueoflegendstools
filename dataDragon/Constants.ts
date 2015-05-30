@@ -13,8 +13,5 @@ module dataDragon
 	*/
     export const dataDragonDomain = 'ddragon.leagueoflegends.com';
 
-	/**
-		default region.
-	*/
-	export const defaultRegion = Region.na;
+	
 }

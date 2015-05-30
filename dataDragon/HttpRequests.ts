@@ -8,10 +8,7 @@
 module dataDragon
 {
     export function getJSONFromHttpRequestAsync(targetURL: string, reviver?: (key: any, value: any) => any): Promise<any>
-    {
-
-        //return <any> $.getJSON(targetURL);
-        
+    {   
         return getTextFromHttpRequestAsync(targetURL).then((responseText) =>
         {
             return JSON.parse(responseText, reviver);
@@ -33,17 +30,28 @@ module dataDragon
         
         return new Promise((resolve, reject) =>
         {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', targetURL,true);
 
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', targetURL, true);
+            
             xhr.onload = (ev) =>
             {
-               
-               
-                if (xhr.status == 200)
+
+
+                if(xhr.status == 200)
                 {
-                    
+
                     resolve(xhr);
+                }
+            };
+
+
+
+            xhr.onloadend = (ev) =>
+            {
+                if(xhr.status != 200 && xhr.status != 204 && xhr.status != 304)
+                {
+                    reject(ev);
                 }
             };
 
@@ -52,7 +60,8 @@ module dataDragon
                 reject(e);
             };
 
-            xhr.send();
+            
+
 
             
         });

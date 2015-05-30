@@ -6,14 +6,19 @@
 
 /// <reference path="references.ts" />
 
-asyncTest('getLanguageCodesAsync test',() => {
 
-	dataDragon.getLanguageCodesAsync().then((languages) => {
-		
+
+/*
+asyncTest('getLanguageCodesAsync test', () =>
+{
+
+    dataDragon.getLanguageCodesAsync().then((languages) =>
+    {
+
         notEqual(languages.length, 0);
         start();
-	});
+    });
 
 });
 
-
+*/
