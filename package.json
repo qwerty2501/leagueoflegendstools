@@ -1,0 +1,18 @@
+{
+  "name": "leagueoflegendstools",
+  "version": "1.0.0",
+  "homepage": "https://github.com/qwerty2501/leagueoflegendstools",
+  "license": " Boost Software License 1.0",
+  "private": true,
+  "author": {
+    "name": "qwerty2501"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "phantomjs": ">=1.9.0",
+    "typescript": ">=1.4.0"
+  }
+}

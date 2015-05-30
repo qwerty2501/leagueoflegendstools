@@ -8,7 +8,7 @@
 
 
 
-/*
+
 asyncTest('getLanguageCodesAsync test', () =>
 {
 
@@ -21,4 +21,4 @@ asyncTest('getLanguageCodesAsync test', () =>
 
 });
 
-*/
+

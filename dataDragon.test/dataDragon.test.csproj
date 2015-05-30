@@ -68,7 +68,6 @@
     <Content Include="index.html" />
     <Content Include="promise-proxy.js" />
     <Content Include="qunit-1.18.0.js" />
-    <Content Include="Scripts\test\dataDragonTest.js" />
     <Content Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
@@ -89,7 +88,9 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Scripts\test\" />
+  </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptOutFile>Scripts/test/dataDragonTest.js</TypeScriptOutFile>
     <TypeScriptOutDir>

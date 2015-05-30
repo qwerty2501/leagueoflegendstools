@@ -194,3 +194,4 @@ ModelManifest.xml
 *.map
 */Scripts/out/*.js
 */Scripts/test/*.js
+node_modules/

@@ -33,7 +33,6 @@ module dataDragon
 
             var xhr = new XMLHttpRequest();
             xhr.open('GET', targetURL, true);
-            
             xhr.onload = (ev) =>
             {
 
@@ -44,8 +43,6 @@ module dataDragon
                     resolve(xhr);
                 }
             };
-
-
 
             xhr.onloadend = (ev) =>
             {
@@ -60,7 +57,7 @@ module dataDragon
                 reject(e);
             };
 
-            
+            xhr.send();
 
 
             
